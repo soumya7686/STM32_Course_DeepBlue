@@ -65,7 +65,7 @@ void KEYPAD_Init(uint16_t au16_Instance, uint8_t* au8_KeyStates)
 		GPIO_InitStruct.Pull = GPIO_PULLDOWN;
 		HAL_GPIO_Init(KEYPAD_CfgParam[au16_Instance].ROW_GPIO[i], &GPIO_InitStruct);
 	}
-	/*--------[ Configure The KeyPAD ROWs GPIO Pins ]-------*/
+	/*--------[ Configure The KeyPAD COLs GPIO Pins ]-------*/
 	for(i=0; i<ROWS; i++)
 	{
 		if(KEYPAD_CfgParam[au16_Instance].COL_GPIO[i] == GPIOA)
